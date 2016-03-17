@@ -16,6 +16,19 @@
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
+		<script>
+  (function() {
+    var cx = '008262195500319463689:yox48pfjzha';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 
 		<%if(theme.tagcloud){%>
 			<div class="switch-btn">
@@ -41,7 +54,7 @@
 						</div>
 						<%}%>
 					</div>
-					
+
 				</div>
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
@@ -77,7 +90,7 @@
 						</div>
 					</nav>
 				</section>
-				
+
 				<%if(theme.tagcloud){%>
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
@@ -85,7 +98,7 @@
 					</div>
 				</section>
 				<%}%>
-				
+
 				<%if(theme.friends && theme.friends.length != 0){%>
 				<section class="switch-part switch-part3">
 					<div id="js-friends">
@@ -107,5 +120,5 @@
 				<%}%>
 			</div>
 		</div>
-	</header>				
+	</header>
 </div>
