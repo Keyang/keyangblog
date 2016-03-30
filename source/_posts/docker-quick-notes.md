@@ -183,10 +183,44 @@ It is able to use:
 * consul
 and some other key-value stores.
 
+### Token
+token is hosted on docker.com. Typeically not used for prod.
+
+Generate a token:
+```
+docker run --rm swarm create
+```
+
+Then it is able to use `token://<tokenID>` as discovery service
+
 ## Swarm Manager TLS
 
 As docker swarm manager needs to actively manage swarm agents, it needs have its own TLS certificates signed by same CA. Otherwise, swarm manager will not be able to talk to swarm agents.
 For example:
 ```bash
 docker run -d -p 3376:3376 -t -v /var/lib/boot2docker:/certs:ro swarm manage -H 0.0.0.0:3376 --tlsverify --tlscacert=/certs/ca.pem --tlscert=/certs/server.pem --tlskey=/certs/server-key.pem token://123456789
+```
+
+## Run container on specific Swarm agent
+```yaml
+environment:
+  - "constraint:node==node-1"
+```
+the `node-1` can be name of the docker machine.
+
+#Docker Engine
+
+## Restart policy
+```
+docker run --restart =<restart strategy > <image name>
+```
+Restart strategies:
+* no
+* on-failure[:max-retries]
+* always
+* unless-stopped
+
+## give a name
+```
+docker run --name=<name> <image name>
 ```

@@ -1,7 +1,15 @@
 title: Quick Note for Unit Tests in Angularjs
 date: 2016-03-28 15:05:54
 tags:
+  - angularjs
+  - test
+categories:
+  - tech
 ---
+Testing with web app is always fun. Angularjs makes it even better.
+This quick note bootstrap any angular.js projects embracing with unit tests.
+
+
 # Tools
 Unit testing in Angularjs is using (by default) Jasmine and Karma.
 
@@ -9,6 +17,8 @@ Also, angular-mocks needs to be installed. It is needed for injection and some o
 ```
 bower install --save angular-mocks
 ```
+
+<!-- more -->
 
 # Npm dependencies
 Following npm packages are needed and add them as devDependencies:
