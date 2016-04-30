@@ -1,8 +1,9 @@
-title: CSVTOJSON Demo
+title: Online csv to json
 noDate: "true"
 comments: false
+keywords: csvtojson, online csv to json, free csv to json, csv to json node.js
 ---
-<script type="application/javascript" src="/js/csvtojson.txt"></script>
+<script type="application/javascript" src="https://cdn.rawgit.com/Keyang/node-csvtojson/master/dist/csvtojson.js"></script>
 <script type="application/javascript" src="c2j.js"></script>
 <link rel="stylesheet" href="c2j.css" />
 <div id="source">
@@ -29,21 +30,21 @@ comments: false
       </div>
     </div>
     <form id="paramBox">
-      <div class="section col-4-item">
-        <span>Delimiter:
-          <input name="conf_delimiter" id="conf_delimiter" class="sm" value="," />
+      <div class="section col-4-item clearfix">
+        <span>Trim:
+          <input name="conf_trim" id="conf_trim" type="checkbox" />
+        </span>
+        <span>Max Row Length:
+          <input name="conf_maxRowLength" id="conf_maxRowLength" class="sm"/>
         </span>
         <span>Quote:
           <input name="conf_quote" id="conf_quote" class="sm" value="" />
-        </span>
-        <span>Trim:
-          <input name="conf_trim" id="conf_trim" type="checkbox" />
         </span>
         <span>Check Type:
           <input name="conf_checkType" id="conf_checkType" type="checkbox" />
         </span>
       </div>
-      <div class="section col-4-item">
+      <div class="section col-4-item clearfix">
         <span>Ignore Empty:
           <input name="conf_ignoreEmpty" id="conf_ignoreEmpty" type="checkbox" />
         </span>
@@ -57,16 +58,16 @@ comments: false
           <input name="conf_checkColumn" id="conf_checkColumn" type="checkbox" />
         </span>
       </div>
-      <div class="section col-2-item">
-        <span>Max Row Length:
-          <input name="conf_maxRowLength" id="conf_maxRowLength" />
+      <div class="section col-2-item clearfix">
+        <span>Delimiter:
+          <input name="conf_delimiter" id="conf_delimiter" class="dyna" value="," />
         </span>
         <span>Headers:
           <input name="conf_headers" id="conf_headers" class="dyna" placeholder="['header1','header2']" />
         </span>
       </div>
       <div class="section">
-        See <a href="https://github.com/Keyang/node-csvtojson#params" target="_blank">here</a> for more about parameters.
+        Move mouse over to see usage or visit <a href="https://github.com/Keyang/node-csvtojson#params" target="_blank">here</a> for more about parameters.
         Not all parameters are available for web version.
       </div>
     </form>
@@ -103,3 +104,6 @@ comments: false
     Back
   </div>
 </div>
+    <div>
+    This tool is powered by Node.js csvtojson module. Github url: <a href="https://github.com/Keyang/node-csvtojson" target="_blank">https://github.com/Keyang/node-csvtojson</a>
+    </div>
