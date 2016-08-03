@@ -33,3 +33,22 @@ model.create({password:"12345"}) //password will be hashed
 ```js
 doc.password="22222" // 22222 will be hashed
 ```
+
+However, this will not work for `update` query:
+```js
+model.update({_id:<id>},{$set:{password:"12345"}}) // password will not be hashed
+model.findOneAndUpdate
+model.findAndUpdate
+```
+
+For password, it is able to write beforeUpdateHook
+```js
+schema.methods.beforeUpdateHook=function(data){
+  if (!data || this.password === data.password){
+    return ;
+  }
+  if (data.password){
+    data.password=hash(data.password);
+  }
+}
+```
