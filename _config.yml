@@ -4,7 +4,7 @@
 
 # Site
 title: Keyang's Blog
-subtitle: Be happy everyday
+subtitle: A home of Javascript
 description:
 author: Keyang Xiang
 language: en
@@ -26,9 +26,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - simplepsd/*
-  - simplepsd/**/*
-  - simplepsd/
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -78,3 +75,12 @@ deploy:
   type: git
   repo: git@github.com:Keyang/keyang.github.io.git
   branch: master
+
+
+#Sitemap
+sitemap:
+  path: sitemap.xml
+
+#robots
+robotstxt:
+  sitemap: /sitemap.xml

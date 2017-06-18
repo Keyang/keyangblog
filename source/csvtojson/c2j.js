@@ -4,10 +4,13 @@ $(function() {
   $("#jsonRes").on("click", selectRes);
   $("#toggleParams").on("click", toggleParams);
   // init();
-  toggleParams();
+  // toggleParams();
 });
 
-var defParam=(new csvtojson.Converter({})).param  ;
+var defParam=defaultParam();
+function defaultParam(){
+  return csvtojson().param;
+}
 var paramsOn = false;
 $.get("https://raw.githubusercontent.com/Keyang/node-csvtojson/master/bin/options.json",function(res){
   var options=JSON.parse(res).options;
@@ -114,6 +117,11 @@ function convert() {
     $("#jsonRes").val(JSON.stringify(result, null, 2));
     $("#source").hide();
     $("#result").fadeIn();
+    setTimeout(function(){
+      var ads='<ins class="adsbygoogle" '+'style="display:block" '+'data-ad-client="ca-pub-3813796308245340" '+'data-ad-slot="4313447711" '+'data-ad-format="auto"></ins> '+'<script>'+'(adsbygoogle = window.adsbygoogle || []).push({});'+'</script>';
+      $("#resultAd").html(ads);
+    },100);
+    defParam=defaultParam();
   });
 }
 
