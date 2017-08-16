@@ -65,6 +65,8 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 disqus_shortname: keyangxiang
 theme: yillia
+exclude_generator:
+  - index
 feed:
   type: atom
   path: atom.xml
@@ -84,3 +86,9 @@ sitemap:
 #robots
 robotstxt:
   sitemap: /sitemap.xml
+
+seo_structured_data:
+  organization:
+    name: Keyang Xiang
+    url: http://keyangxiang.com
+    logoUrl: https://avatars3.githubusercontent.com/u/1092855
