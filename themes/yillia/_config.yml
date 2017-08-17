@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  Blogs: /blog
   Articles: /archives
   csvtojson: /csvtojson
   Simple PSD: /simplepsd
