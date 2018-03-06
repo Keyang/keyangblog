@@ -3,8 +3,7 @@ date: 2016-03-16 17:41:36
 tags:
   - npm
   - node.js
-categories:
-  - tech
+
 ---
 [minimist](https://github.com/substack/minimist) is a lightweight cli argument (command line arguments) parser:
 

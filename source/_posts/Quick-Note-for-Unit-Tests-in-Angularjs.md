@@ -3,8 +3,7 @@ date: 2016-03-28 15:05:54
 tags:
   - angularjs
   - test
-categories:
-  - tech
+
 ---
 Testing with web app is always fun. Angularjs makes it even better.
 This quick note bootstrap any angular.js projects embracing with unit tests.

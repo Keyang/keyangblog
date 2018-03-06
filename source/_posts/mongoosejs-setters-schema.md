@@ -1,10 +1,9 @@
-title: 'mongoosejs: setters schema'
+title: 'Using setter in Mongoose'
 date: 2016-03-20 18:16:31
 tags:
   - node.js
   - mongoose.js
-categories:
-  - tech
+
 ---
 According to mongoose.js doc, it is able to set setters to a field on schema.
 However, the [doc](http://mongoosejs.com/docs/2.7.x/docs/getters-setters.html) is not quite detailed and obselete.
@@ -22,6 +21,7 @@ function hash(plainPwd){
   return require("crypto").createHash("sha1").update(plainPwd).update(secret).digest("hex");
 }
 ```
+<!--more-->
 
 The `hash` will be called mainly on following scenarios:
 

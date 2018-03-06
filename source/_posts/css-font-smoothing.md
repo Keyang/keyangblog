@@ -2,8 +2,6 @@ title: 'css: font-smoothing'
 date: 2016-03-16 17:30:36
 tags:
   - css
-categories:
-  - tech
 ---
 
 ```css

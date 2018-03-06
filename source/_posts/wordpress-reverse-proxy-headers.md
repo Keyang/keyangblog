@@ -3,8 +3,7 @@ date: 2016-03-17 21:32:31
 tags:
   - wordpress
   - nginx
-categories:
-  - tech
+
 ---
 When put wordpress blog behind a reverse proxy (e.g. nginx), some headers have to be setup:
 

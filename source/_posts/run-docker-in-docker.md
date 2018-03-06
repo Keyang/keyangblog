@@ -2,8 +2,7 @@ title: run docker in docker
 date: 2016-04-07 17:32:14
 tags:
   - docker
-categories:
-  - tech
+
 ---
 Run docker in docker
 ```

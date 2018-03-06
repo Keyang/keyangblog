@@ -8,6 +8,8 @@ Taking screenshots with MacOSX is very useful when writting blogs or documents. 
 
 This blog will go through how to change the location of screenshots to another folder.
 
+<!--more-->
+
 # Step 1 Create a folder
 
 Create a new folder anywhere using `finder` or `terminal`. Here I created `blog_statics` folder in my Google Drive folder.

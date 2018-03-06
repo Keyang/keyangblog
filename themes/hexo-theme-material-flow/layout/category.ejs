@@ -1,0 +1,45 @@
+<article id="archive-page" class="post article white-box">
+  <section class='meta'>
+    <h2 class="title">
+      <a href="javascript:void(0)">
+        <%= page.category %>
+      </a>
+    </h2>
+  </section>
+  <section class="archive">
+    <%
+        var year = -1, postid = -1;
+        page.posts.sort('title', 1).each(function(post) {
+          post.year = date(post.date, 'YYYY');
+         %>
+        <div class="archive-item archive-post mark">
+          <a href="<%= url_for(post.path) %>">
+            
+            <span class="title">
+              <span>
+                <%= date(post.date,"YYYY-MM-DD")+" "+post.title %>
+              </span>
+            </span>
+          </a>
+        </div>
+        <% }); %>
+  </section>
+</article>
+<!--
+  <% if (page.total > 1) { %>
+    <nav id="page-nav">
+      <% if (page.prev != 0) { %>
+      <a class="prev" rel="prev" href="<%= url_for(page.prev_link) %>">
+        <span class="icon icon-chevron-left"></span>
+        <span class="text">Previous</span>
+      </a>
+      <% } %>
+      <% if (page.next != 0) { %>
+      <a class="next" rel="next" href="<%= url_for(page.next_link) %>">
+        <span class="text">Next</span>
+        <span class="icon icon-chevron-right"></span>
+      </a>
+      <% } %>
+    </nav>
+  <% } %>
+    -->

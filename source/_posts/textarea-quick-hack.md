@@ -1,10 +1,9 @@
-title: textarea quick hack
+title: How to make textarea resizable and change its default outline style
 date: 2016-01-12 10:35:25
 tags:
   - html
   - css
-categories:
-  - tech
+
 ---
 ### Resize
 Switch on / off resize of a textarea on horizontal / vertical / both.

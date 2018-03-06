@@ -3,8 +3,7 @@ date: 2016-03-30 13:47:49
 tags:
   - node.js
   - express.js
-categories:
-  - tech
+
 ---
 According to [this](http://stackoverflow.com/questions/8107856/how-to-determine-a-users-ip-address-in-node), do following to determine the client ipaddress:
 

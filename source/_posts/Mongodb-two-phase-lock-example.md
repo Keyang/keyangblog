@@ -2,8 +2,7 @@ title: Mongodb two phase lock example (with mongoose)
 date: 2016-03-17 22:34:09
 tags:
   - mongodb
-categories:
-  - tech
+
 ---
 Mongodb needs extra collection for two phase lock.
 ```js

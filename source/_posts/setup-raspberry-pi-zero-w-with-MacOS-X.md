@@ -17,7 +17,7 @@ To setup a brand new [raspberrypi zero w](https://www.raspberrypi.org/products/p
 
 All coneectors can come from seller when you purchase Raspberrypi zero w.
 
-[[Picture]]
+<!--more-->
 
 
 # Step 2 Download Raspbian Image

@@ -1,11 +1,10 @@
-title: Using service worker enables web app offline usage
+title: How to make website offline accessible
+description: Progress web app - enable website offline access with service worker.
 date: 2017-08-17 22:23:54
 tags:
   - web
   - js
 ---
-
-## What am I doing
 
 It is incredibly easy to make a rich web application like [psdetch](https://studio.psdetch.com) working offline with [Service Worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers). 5 minutes are all you need!
 

@@ -2,15 +2,14 @@ title: Docker multi-hosting network quick note
 date: 2016-03-30 18:24:17
 tags:
   - docker
-categories:
-  - tech
+
 ---
 To create an `overlay` network on multiple hosts over swarm, following are required:
 * a key-value store service: this is used for broadcasting hosts / swarm agents. It can be same kv store swarm used for discovery
 * Run docker daemon with following parameters:
   - cluster-store: where the store is
   - cluster-advertise: what network interface to be advertised
-
+<!--more-->
 # Setup consul KV store
 ```
 docker run -d \

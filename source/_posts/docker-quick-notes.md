@@ -3,8 +3,7 @@ author: Keyang Xiang
 date: 2016/2/10
 tag:
   - docker
-categories:
-  - tech
+
 ---
 
 # What is Docker and why?

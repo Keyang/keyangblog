@@ -1,0 +1,44 @@
+@button-border: none;
+@button-background-focus: lighten(@secondary-color, 4%);
+@button-font-size: 1rem;
+@button-icon-font-size: 1.3rem;
+@button-height: 36px;
+@button-padding: 0 2rem;
+@button-radius: 2px;
+// Disabled styles
+@button-disabled-background: #DFDFDF;
+@button-disabled-color: #9F9F9F;
+// Raised buttons
+@button-raised-background: @secondary-color;
+@button-raised-background-hover: lighten(@button-raised-background, 5%);
+@button-raised-color: #fff;
+.btn-material {
+    border: @button-border;
+    border-radius: @button-radius;
+    display: inline-block;
+    height: @button-height;
+    line-height: @button-height;
+    padding: @button-padding;
+    text-transform: uppercase;
+    vertical-align: middle; // Gets rid of tap active state
+    -webkit-tap-highlight-color: transparent;
+    font-size: @button-font-size;
+    outline: 0;
+    i {
+        font-size: @button-icon-font-size;
+        line-height: inherit;
+    }
+    &:focus {
+        background-color: darken(@button-raised-background, 10%);
+    }
+    text-decoration: none;
+    color: @button-raised-color;
+    background-color: @button-raised-background;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    &:hover {
+        background-color: @button-raised-background-hover;
+    }
+}

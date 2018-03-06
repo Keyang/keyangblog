@@ -3,8 +3,7 @@ date: 2016-03-31 00:25:15
 tags:
   - html
   - css
-categories:
-  - tech
+
 ---
 e.g.
 ```css
