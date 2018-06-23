@@ -1,5 +1,7 @@
 title: How to deploy website to openshift with nginx?
 date: 2017-10-24 22:04:14
+categories:
+  - Openshift
 tags:
   - openshift
   - nginx

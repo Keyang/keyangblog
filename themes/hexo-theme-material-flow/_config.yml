@@ -34,7 +34,7 @@ menu:
     url: /
   - name: CSVTOJSON
     slug: csvtojson
-    url: /csvtojson
+    url: https://csv.keyangxiang.com
   - name: PSDETCH
     slug: psdetch
     url: https://psdetch.com

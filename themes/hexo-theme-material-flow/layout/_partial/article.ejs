@@ -1,3 +1,6 @@
+<%
+var cat=post.categories?post.categories.first():undefined;
+%>
 <article id="<%= post.layout %>-<%= post.slug %>"
   class="post white-box article-type-<%= post.layout %>"
   itemscope itemprop="blogPost">
@@ -12,9 +15,14 @@
 	</time>
 	<%- partial('categories',{post:post}) %>
 	</section>
-	<% if(post.toc!==false){ %>
-		<section class="toc-wrapper"><%- toc(post.content) %></section>
-	<% } %>
+	<div class="article_right_wrapper">
+		<% if(post.toc!==false){ %>
+			<section class="toc-wrapper"><%- toc(post.content) %></section>
+		<% } %>
+		<% if (cat){ %>
+			<section ><%- partial('./cat_list',{cat:cat}) %></section>
+		<% } %>
+	</div>
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
     	<%- post.content %>
